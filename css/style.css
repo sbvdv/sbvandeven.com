@@ -1,0 +1,283 @@
+/* sbvandeven.com — Authentic Connection Institute
+   Typography: Fraunces (headings) + Inter (body)
+   Palette: warm off-white background, dark warm gray text, one accent
+   Reference: maggieappleton.com aesthetic
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #FAF8F3;
+  --text: #2A2623;
+  --muted: #6B635B;
+  --accent: #C4622D;
+  --accent-soft: #EBD9C9;
+  --rule: #E8E1D4;
+  --max-width: 680px;
+  --max-width-wide: 860px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+
+.container-wide {
+  max-width: var(--max-width-wide);
+}
+
+/* Typography */
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+p.lead {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Links */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+  transition: border-color 0.15s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Site header + footer */
+
+header.site {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 3rem;
+}
+
+header.site a.home {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text);
+  border: none;
+  letter-spacing: -0.01em;
+}
+
+header.site a.home:hover {
+  color: var(--accent);
+}
+
+footer.site {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+footer.site a {
+  color: var(--muted);
+  border-bottom-color: var(--rule);
+}
+
+footer.site a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Hero */
+
+.hero {
+  margin-bottom: 4rem;
+}
+
+.hero .eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hero .sketch {
+  margin: 2.5rem 0;
+  max-width: 100%;
+  display: block;
+}
+
+/* Belief / goal sections */
+
+section.belief,
+section.goal {
+  margin-bottom: 3.5rem;
+}
+
+section.belief p,
+section.goal p {
+  font-size: 1.1rem;
+}
+
+/* Role portfolio (landing) */
+
+.roles {
+  margin-top: 4rem;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.role-card {
+  display: block;
+  padding: 1.75rem;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.role-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.role-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--text);
+}
+
+.role-card p {
+  font-size: 0.98rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* CTA button */
+
+.cta {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.85rem 1.75rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background-color 0.15s ease;
+}
+
+.cta:hover {
+  background: #A34E21;
+  color: #fff;
+}
+
+/* Role page — cross-links nav at bottom */
+
+.cross-links {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  html { font-size: 17px; }
+  .container { padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.5rem; }
+  p.lead { font-size: 1.1rem; }
+  .roles-grid { grid-template-columns: 1fr; }
+}
