@@ -1,4 +1,4 @@
-/* sbvandeven.com — Authentic Connection Institute
+/* sbvandeven.com — Stephan van de Ven
    Typography: Fraunces (headings) + Inter (body)
    Palette: warm off-white background, dark warm gray text, one accent
    Reference: maggieappleton.com aesthetic
@@ -396,6 +396,19 @@ section.goal p {
   font-size: 0.9rem;
   color: var(--muted);
   font-style: normal;
+}
+
+/* About page */
+
+.portrait {
+  margin: 0 0 2.5rem 0;
+}
+
+.portrait img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 4px;
+  display: block;
 }
 
 /* Responsive */
