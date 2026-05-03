@@ -264,6 +264,59 @@ section.goal p {
   margin: 0;
 }
 
+/* Article pages */
+
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.post-subtitle {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.post-body hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0;
+}
+
+.post-body h2 {
+  margin-top: 3rem;
+}
+
+.post-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.writing-entry h3 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.writing-entry p:last-child {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin: 0;
+}
+
 /* CTA button */
 
 .cta {
