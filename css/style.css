@@ -271,6 +271,65 @@ section.goal p {
   font-size: 0.95rem;
 }
 
+/* Video embed — responsive 16:9 */
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin: 2rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-caption {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+/* Case study meta tag */
+
+.case-study-tag {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* Testimonial block */
+
+.testimonial {
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin: 2.5rem 0;
+  background: #fff;
+  border-radius: 0 6px 6px 0;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial cite {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: normal;
+}
+
 /* Responsive */
 
 @media (max-width: 640px) {
