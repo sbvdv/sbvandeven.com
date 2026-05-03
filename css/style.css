@@ -118,6 +118,11 @@ header.site {
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--rule);
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
 }
 
 header.site a.home {
@@ -131,6 +136,28 @@ header.site a.home {
 
 header.site a.home:hover {
   color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  align-items: baseline;
+}
+
+.site-nav a {
+  font-size: 0.88rem;
+  color: var(--muted);
+  border: none;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 500;
 }
 
 footer.site {
@@ -257,18 +284,6 @@ section.goal p {
 .cta:hover {
   background: #A34E21;
   color: #fff;
-}
-
-/* Role page — cross-links nav at bottom */
-
-.cross-links {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--rule);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  font-size: 0.95rem;
 }
 
 /* Video embed — responsive 16:9 */
