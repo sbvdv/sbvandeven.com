@@ -411,6 +411,56 @@ section.goal p {
   display: block;
 }
 
+/* Offer / pricing cards */
+
+.offer-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.offer {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 1.75rem;
+}
+
+.offer h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.offer .price {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.offer .price-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-left: 0.3rem;
+}
+
+.offer ul {
+  margin: 0.75rem 0 1.25rem 1.25rem;
+}
+
+.offer .cta {
+  margin-top: 1.25rem;
+}
+
+.offer-secondary {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 /* Responsive */
 
 @media (max-width: 640px) {
